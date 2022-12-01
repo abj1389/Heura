@@ -1,0 +1,23 @@
+.header{
+    background-color: #f9e021;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    margin-left: 40px;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    margin-right: 40px;
+}
+
+.list li{
+    margin-left: 15px;
+}
