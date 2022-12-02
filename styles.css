@@ -1,23 +1,80 @@
-.header{
+@media screen and (min-width: 1024px) {
+    .list {
+        list-style: none;
+        display: flex;
+        margin-right: 40px;
+    }
+
+    .list li {
+        margin-left: 15px;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+    }
+
+    .icon-container{
+        display: none;
+    }
+
+    .icon-menu{
+        display: none;
+    }
+
+    .list li:hover{
+        color: white;
+        border-bottom: 2px solid white;
+    }
+}
+
+@media screen and (max-width: 1023px){
+    .list{
+        display: none;
+    }
+
+    .icon-container{
+        background-color: white;
+        border-radius: 25px;
+        width: 50px;
+        height: 50px;
+        margin-right: 40px;
+        position: relative;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+    }
+
+    .icon-menu{
+        width: 20px;
+        height: 25px;
+        margin-right: 40px;
+        margin-top: 10px;
+        position: absolute;
+        top: 5px;
+        left: 16px;
+    }
+
+    .icon-container:hover{
+        background-color: black;
+        color: white;
+    }
+}
+
+@font-face {
+    font-family: 'Heura';
+    src: url('./assets/fonts/Heura.woff');
+    font-weight: 900;
+}
+
+.header {
     background-color: #f9e021;
     width: 100%;
-    height: 200px;
+    height: 180px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Heura';
+    font-size: 20px;
 }
 
-.logo{
-    width: 100px;
-    margin-left: 40px;
-}
-
-.list{
-    list-style: none;
-    display: flex;
-    margin-right: 40px;
-}
-
-.list li{
-    margin-left: 15px;
-}
+.logo {
+        width: 100px;
+        margin-left: 40px;
+    }
